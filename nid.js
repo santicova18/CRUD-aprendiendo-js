@@ -46,6 +46,15 @@ function mostrarTareas() {
         // Celda de acciones
         let celdaAcciones = document.createElement("td");
 
+        let botonEditar = document.createElement("button");
+        botonEditar.textContent = "Editar";
+
+        botonEditar.addEventListener("click", function() {
+            Editar(tarea.id);
+        });
+
+        celdaAcciones.appendChild(botonEditar);
+
         let botonEliminar = document.createElement("button");
         botonEliminar.textContent = "Eliminar";
 
@@ -66,4 +75,20 @@ function eliminar(id) {
     });
 
     mostrarTareas();
-}
+};
+
+
+function Editar(id) {
+    let tarea = arr.find(function(tarea) { 
+        return tarea.id === id;
+    });
+    let nuevoValor = prompt("Ingrese la nueva descripción de la tarea:", tarea.descripcion);
+
+     if (nuevoValor !== null && nuevoValor.trim() !== "") {
+        tarea.descripcion = nuevoValor;
+
+     }
+      
+    mostrarTareas();
+};
+

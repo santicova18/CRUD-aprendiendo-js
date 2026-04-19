@@ -1,0 +1,90 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo */
+body {
+    background-color: #f4f6f8;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input */
+input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón crear */
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+/* Encabezado */
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Celdas */
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Filas alternas */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Botones dentro de tabla */
+td button {
+    margin: 2px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* Botón eliminar */
+td button:last-child {
+    background-color: #e74c3c;
+}
+
+td button:last-child:hover {
+    background-color: #c0392b;
+}
